@@ -58,12 +58,11 @@ body{
   border-radius: 4px;
   background: black;
   transform-origin: bottom;
-  transform: rotate(30deg);
+  transform: rotate(0deg);
   animation-name: minutehand;
-  animation-duration: 10s;
-  animation-iteration-count: 2;
+  animation-duration: 20s;
+  animation-iteration-count: 1;
   animation-direction: normal;
-  animation-delay: 4.5s
 
 }
 
@@ -94,8 +93,13 @@ body{
 }
 
 @keyframes minutehand {
-  0% {transform: rotate(30deg);}
-  50% {transform: rotate(37.5deg);}
-  75% {transform: rotate(45deg);}
-  100% {transform: rotate(52.5deg);}
+  0% {transform: rotate(0deg);}
+  26% {transform: rotate(0deg);}
+  28.5% {transform: rotate(6deg);}
+  51% {transform: rotate(6deg);}
+  53.5% {transform: rotate(12deg);}
+  76% {transform: rotate(12deg);}
+  78.5% {transform: rotate(18deg);}
+  98% {transform: rotate(18deg);}
+  100% {transform: rotate(24deg);}
 }
